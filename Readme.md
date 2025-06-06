@@ -5,7 +5,7 @@ A lightweight, responsive, and privacy-focused Love Compatibility Calculator mad
 [🔗 Live Demo](https://your-deployed-link.com)  
 ![Preview]
 
-<a href="#" target="_blank">
+<a href="https://ajaykumarbluewhale.github.io/Love-Calculator/" target="_blank">
   <img src="./img/hello_page-0001.jpg" alt="Thumbnail"/>
 </a>
 
