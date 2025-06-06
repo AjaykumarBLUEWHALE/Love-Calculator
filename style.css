@@ -1,0 +1,112 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff0f5;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Centered text for demo */
+.center-text {
+  position: relative;
+  text-align: center;
+  top: 40%;
+  font-size: 1.5rem;
+  color: #ff3366;
+}
+
+/* Heart container */
+.heart-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Floating hearts */
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ff3366;
+  transform: rotate(45deg);
+  animation: floatHearts 10s linear infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ff3366;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  left: -10px;
+  top: 0;
+}
+
+/* Animation */
+@keyframes floatHearts {
+  0% {
+    bottom: -10%;
+    opacity: 0;
+    transform: translateX(0) scale(0.8) rotate(45deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 110%;
+    transform: translateX(50px) scale(1.2) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* Random heart positions and delays */
+.heart:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+  animation-duration: 8s;
+}
+.heart:nth-child(2) {
+  left: 25%;
+  animation-delay: 2s;
+  animation-duration: 10s;
+}
+.heart:nth-child(3) {
+  left: 40%;
+  animation-delay: 4s;
+  animation-duration: 12s;
+}
+.heart:nth-child(4) {
+  left: 55%;
+  animation-delay: 1s;
+  animation-duration: 9s;
+}
+.heart:nth-child(5) {
+  left: 70%;
+  animation-delay: 3s;
+  animation-duration: 11s;
+}
+.heart:nth-child(6) {
+  left: 85%;
+  animation-delay: 5s;
+  animation-duration: 10s;
+}
